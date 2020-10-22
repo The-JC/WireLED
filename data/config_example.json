@@ -1,0 +1,16 @@
+{
+	"name": "ESP-8266",
+	"wifi": {
+		"ssid": "<YOUR_SSID>",
+		"password": "<YOUR_PASSWORD>"
+	},
+	"mqtt": {
+		"server": "<MQTT_SERVER_IP>",
+		"port": PORT,
+		"topic": "%DEVICE_ID%/esp8266",
+		"security": "tls",
+		"root_ca": "-----BEGIN CERTIFICATE-----\n<ROOT_CERTIFICATE>\n-----END CERTIFICATE-----",
+		"client_certificate": "-----BEGIN CERTIFICATE-----\n<CLIENT_RSA_CERTIFICATE>\n-----END CERTIFICATE-----",
+		"client_key": "-----BEGIN RSA PRIVATE KEY-----\n<CLIENT_RSA_KEY>\n-----END RSA PRIVATE KEY-----"
+	}
+}
